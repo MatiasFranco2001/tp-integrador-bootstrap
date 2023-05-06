@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #343a40;
+    position: fixed;
+    z-index: 1; 
+}
+.logo{
+    position:absolute;
+    padding: 0px 10px;
+}
+.img-principal{
+    
+    display: flex;
+    text-align: center;
+    filter: brightness(45%);
+    flex-wrap: wrap;
+    width: 100%;
+    position:relative;
+}
+.card-float{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+    color: cornsilk;
+}
+
+.btnAceptar{
+        color:black;
+        background-color: blueviolet;
+        margin: 10px;
+      
+}
+
+.centrar{
+    text-align: center;
+}
+
+.card{
+    position: relative;
+    text-align: justify;
+    margin: 4%;
+    
+
+}
+.contanierFoto{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+.foto{
+    width: 400px;
+    height: 300px;
+    margin:auto; 
+    object-fit: cover;
+} 
+
+.playa{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.col{
+    margin: 10px;
+}
+
+.rellenar{
+    
+    display: flex;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin:0 5px;
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 30px;
+    float:right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display:none;
+}
+
+
+
+@media(max-width:926px){
+    .card-float{
+        font-size: 13px;
+        min-width: 360px;
+        min-height: 360px;
+        top: 16%;
+        left: 20%;
+    }
+    .checkbtn{
+      display: block;  
+    }
+    .navb{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:  #343a40 ;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
